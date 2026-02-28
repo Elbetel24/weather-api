@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Weather Dashboard</h1>
+      <p class="subtitle">Current weather & 5-day forecast</p>
+    </header>
+
+    <main class="app-main">
+      <section class="controls">
+        <div class="search-box">
+          <input type="text" id="cityInput" placeholder="Enter city name (e.g. London)" autocomplete="off" />
+          <button id="searchBtn">Search</button>
+        </div>
+        <button id="geoBtn" class="secondary-btn">Use My Location</button>
+      </section>
+
+      <section class="cards-layout">
+        <article id="weatherCard" class="card card-current">
+          <h2>Current Weather</h2>
+          <div id="weatherResult" class="card-body placeholder">
+            <p>Search for a city or use your location to see the weather.</p>
+          </div>
+        </article>
+
+        <article id="forecastCard" class="card card-forecast">
+          <h2>5 Day Forecast</h2>
+          <div id="forecastResult" class="forecast-grid placeholder">
+            <p>Forecast will appear here.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
